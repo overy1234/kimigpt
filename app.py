@@ -11,7 +11,7 @@ app = Flask(__name__)
 # Vercel에서는 정적 파일을 직접 서빙하므로 이 설정 추가
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
-# Kimi-K2 API 클라이언트 설정
+# KorGPT API 클라이언트 설정
 client = OpenAI(
     base_url="https://router.huggingface.co/v1",
     api_key=os.environ.get("HF_TOKEN", "your-huggingface-token-here"),
@@ -59,7 +59,7 @@ def chat():
             "content": user_message
         })
         
-        # Kimi-K2 API 호출
+        # KorGPT API 호출
         completion = client.chat.completions.create(
             model="moonshotai/Kimi-K2-Instruct:fireworks-ai",
             messages=conversations[session_id],
