@@ -27,6 +27,21 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+
+@app.route('/privacy')
+def privacy():
+    return render_template('privacy.html')
+
+
+@app.route('/donate')
+def donate():
+    return render_template('donate.html')
+
+
 @app.route('/chat', methods=['POST'])
 def chat():
     try:
@@ -87,9 +102,8 @@ def clear_history():
         return jsonify({'success': False, 'error': str(e)}), 500
 
 
+# Vercel을 위한 handler (WSGI 애플리케이션)
+app.wsgi_app = app.wsgi_app
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
-
-# Vercel을 위한 handler
-# Vercel에서는 이 변수를 찾아서 실행합니다
-handler = app

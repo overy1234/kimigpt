@@ -1,3 +1,5 @@
+개발자
+-Ryu Keon Kon-
 # Kimi-K2 채팅 웹사이트
 
 Hugging Face의 Kimi-K2 API를 사용한 간단한 채팅 웹 애플리케이션입니다.
