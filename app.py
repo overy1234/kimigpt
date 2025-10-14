@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, send_from_directory
 from openai import OpenAI
 from dotenv import load_dotenv
 
@@ -45,6 +45,11 @@ def donate():
 @app.route('/ad-inquiry')
 def ad_inquiry():
     return render_template('ad-inquiry.html')
+
+
+@app.route('/ads.txt')
+def ads_txt():
+    return send_from_directory('.', 'ads.txt', mimetype='text/plain')
 
 
 @app.route('/chat', methods=['POST'])
