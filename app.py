@@ -42,6 +42,11 @@ def donate():
     return render_template('donate.html')
 
 
+@app.route('/ad-inquiry')
+def ad_inquiry():
+    return render_template('ad-inquiry.html')
+
+
 @app.route('/chat', methods=['POST'])
 def chat():
     try:
