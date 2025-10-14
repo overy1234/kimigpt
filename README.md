@@ -1,8 +1,11 @@
-개발자
--Ryu Keon Kon-
-# Kimi-K2 채팅 웹사이트
+# 🤖 KorGPT AI Chat
 
-Hugging Face의 Kimi-K2 API를 사용한 간단한 채팅 웹 애플리케이션입니다.
+**IndieCode**가 오픈소스를 활용하여 만든 무료 AI 채팅 서비스입니다.
+
+Hugging Face의 Kimi-K2 API를 기반으로 한 대화형 AI 웹 애플리케이션으로, 누구나 무료로 이용할 수 있습니다.
+
+## 👨‍💻 개발자
+**Ryu Keon Kon** (IndieCode)
 
 ## 🚀 시작하기
 
@@ -77,5 +80,26 @@ completion = client.chat.completions.create(
 
 - **Backend**: Flask (Python)
 - **Frontend**: HTML, CSS, JavaScript
-- **AI Model**: Kimi-K2 (via Hugging Face)
+- **AI Model**: KorGPT (moonshotai/Kimi-K2-Instruct via Hugging Face)
 - **API**: OpenAI SDK (compatible)
+- **Deployment**: Vercel
+- **Version Control**: Git/GitHub
+
+## 🌟 특징
+
+- **완전 무료**: 누구나 제한 없이 무료로 사용 가능
+- **오픈소스**: IndieCode가 오픈소스 기술을 활용하여 개발
+- **최신 AI**: Hugging Face의 강력한 AI 모델 활용
+- **빠른 응답**: 실시간 대화 처리
+- **코드 하이라이팅**: 코드 블록 자동 포맷팅 및 복사 기능
+- **반응형 디자인**: 모바일/태블릿/PC 모두 지원
+
+## 📞 문의
+
+- **광고 문의**: overy1234@naver.com
+- **후원**: [후원 페이지](/donate)
+- **GitHub**: [overy1234/kimigpt](https://github.com/overy1234/kimigpt)
+
+## 📄 라이선스
+
+이 프로젝트는 오픈소스이며, 자유롭게 사용 및 수정 가능합니다.
